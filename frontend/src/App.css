@@ -1,0 +1,381 @@
+body {
+  background-color: #EEEEEE
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: #111;
+}
+
+table {
+  width: 100%;
+  list-style-type: none;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  list-style-type: none;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+table#t01 tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+table#t01 tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.maybe {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: rgb(255, 230, 5);
+  color: rgb(0, 0, 0);
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: center;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  overflow: hidden;
+  font-size: 19px;
+}
+
+.maybe2 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: rgba(230, 227, 201, 0.514);
+  color: rgb(0, 0, 0);
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: center;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  overflow: hidden;
+}
+
+.maybe2:hover {
+  background-color: rgba(0, 0, 0, 0.164)
+}
+
+.sold {
+  color: green;
+}
+
+.select {
+  background: white no-repeat 96% 0;
+  height: 36px;
+  overflow: hidden;
+  width: 81px;
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+}
+
+.search {
+  text-align: center;
+  background: white no-repeat 96% 0;
+  height: 29px;
+  overflow: hidden;
+  width: 240px;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+.search::placeholder {
+  color: #111
+}
+
+.transfer {
+  color: orange;
+  margin-left: 40px
+}
+
+.transfer:active {
+  transform: translateY(4px);
+}
+
+.addButton:active {
+  transform: translateY(4px);
+}
+
+.selects {
+  background: white no-repeat 96% 0;
+  height: 36px;
+  overflow: hidden;
+  width: 81px;
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-left: 15px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.declaire {
+  margin-top: 30px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.clientinput {
+  text-align: center;
+  background: white no-repeat 96% 0;
+  height: 25px;
+  overflow: hidden;
+  width: 178px;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  margin-left: 15px
+}
+
+.update {
+  font-size: 31px;
+}
+
+.updateContainer {
+  margin-top: 50px
+}
+
+.Owneroption {
+  margin-left: 10px;
+}
+
+.selectClient {
+  background: white no-repeat 96% 0;
+  height: 36px;
+  overflow: hidden;
+  width: 140px;
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-left: 15px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.addInput {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #00000031;
+  margin-top: 6px;
+  position: absolute;
+  left: 100px;
+  font-size: 16px;
+  margin-left: 60px
+}
+
+.addButton {
+  font-size: 30px;
+  background-color: yellow;
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.473);
+  margin-top: 50px
+}
+
+.addClient {
+  font-size: 28px;
+}
+
+.addClientContainer {
+  font-size: 20px;
+}
+
+.addInput::placeholder {
+  font-size: 16px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.Action-container {
+  margin-left: 50px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.email {
+  font-size: 13px
+}
+
+.x {
+  color: red;
+}
+
+.fa-arrow-left {
+  padding-right: 40px
+}
+
+.fa-arrow-right {
+  padding-left: 40px
+}
+
+.search-container {
+  text-align: center;
+}
+
+.popupContainer {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 230, 0, 0.952);
+  position: absolute;
+  top: 0;
+  margin-left: 600px;
+  margin-top: 400px;
+  
+}
+
+.xs {
+  color: red;
+  font-size: 40px
+}
+
+
+
+.fa-chart-line {
+  color: rgb(255, 255, 255);
+  background-color: rgb(35, 122, 8);
+  border: 9px solid rgb(9, 117, 5);
+  border-radius: 40px;
+  font-size: 70px;
+  
+  
+}
+
+.fa-envelope{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 140, 255);
+  border: 9px solid rgb(0, 110, 255);
+  border-radius: 40px;
+  font-size: 70px;
+  margin-left: 150px
+ 
+
+}
+
+.fa-user-alt{
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+  border: 9px solid rgb(255, 0, 0);
+  border-radius: 40px;
+  font-size: 70px;
+  margin-left: 150px
+}
+
+.fa-globe-americas{ color: rgb(255, 255, 255);
+  background-color: rgb(255, 196, 0);
+  border: 9px solid rgb(255, 230, 0);
+  border-radius: 40px;
+  font-size: 70px;
+  margin-left: 150px
+}
+.fa-globe-americas:hover{
+  background-color: #030303b9
+}
+.fa-user-alt:hover{
+  background-color: #030303b9
+}
+.fa-envelope:hover{
+  background-color: #030303b9
+}
+.fa-chart-line:hover{
+  background-color: #030303b9
+}
+
+h5{
+  font-size: 20px
+}
+
+.charts{
+  display:inline-flex;
+  float: left;
+padding-bottom: 100px
+
+}
+
+.SalesByParameters{
+ position: absolute;
+ top: 0%;
+ margin-left: 600px;
+ margin-top: 289px
+}
+
+
+.popups{
+  text-align: center;
+  background: white no-repeat 96% 0;
+  height: 30px;
+  overflow: hidden;
+  width: 170px;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  font-size: 17px
+  
+}
+
+.popupss{
+  text-align: center;
+  background: white no-repeat 96% 0;
+  height: 30px;
+  overflow: hidden;
+  width: 170px;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  font-size: 17px
+  
+  
+}
+
+.popcontainer{text-align: center}
+
+
+
+.popupssdiv{
+  margin-top: 30px
+}
+
+.updates{
+  margin-top: 20px;
+color: whitesmoke
+;background-color: #111;
+font-size: 32px
+}
+
+.popups::placeholder{
+font-size: 17px
+}
+
+.popupss::placeholder{
+  font-size: 17px
+  }
+
+  .updates:active{
+    transform: translateY(4px);
+  }
+ 
