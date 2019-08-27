@@ -18,7 +18,7 @@ class App extends Component {
 
 
   newClient = async (client) => {
-    axios.post('/client', client)
+    axios.post('http://localhost:8080/client', client)
    
     this.myGet()
 
@@ -26,7 +26,7 @@ class App extends Component {
 
   
   myGet = async () => {
-    let data = await axios.get('/clients')
+    let data = await axios.get('http://localhost:8080/clients')
     data = data.data
     this.setState({
       data
@@ -41,14 +41,14 @@ class App extends Component {
 
   updateClient = async (client) => {
     console.log(client)
-    let data = await axios.put(`/updateClient/${client.name}`, client)
+    let data = await axios.put(`http://localhost:8080/updateClient/${client.name}`, client)
     console.log(data.data.name + ' updted')
     this.myGet()
   }
 
 
   updatePopup = async (client) => {
-    await axios.put(`/popup`, client, function (res) {
+    await axios.put(`http://localhost:8080/popup`, client, function (res) {
       res.end()
     })
   }
