@@ -6,6 +6,7 @@ const bodyParser = require( 'body-parser' )
 const mongoose = require( 'mongoose' )
 
 const router = require('./server/routes/api')
+app.use(express.static(path.join(__dirname, 'build')));
 
 app.use( bodyParser.json() )
 app.use( bodyParser.urlencoded( { extended: false } ) )
@@ -20,6 +21,10 @@ app.use(function (req, res, next) {
 
 
 app.use( '/', router )
+
+app.get('*', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 
 mongoose.connect('mongodb://localhost/crm', { useNewUrlParser: true } ).then( () => {

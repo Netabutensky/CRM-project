@@ -17,7 +17,7 @@
     "recharts": "^1.7.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -37,7 +37,20 @@
       "last 1 safari version"
     ]
   },
+
   "devDependencies": {
     "ember-cli-materialize": "^0.22.0"
-  }
+  },
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
+    },
+    {
+      "url": "heroku/node.js"
+    }
+  ]
+
+  
 }
+
