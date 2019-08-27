@@ -14,8 +14,8 @@ class App extends Component {
       data: [],
 
     }
-  }
-
+  } 
+  
 
   newClient = async (client) => {
     axios.post('http://localhost:8080/client', client)
@@ -33,6 +33,14 @@ class App extends Component {
     })
   }
 
+
+  // myGet = async () => {
+  //   let data = await axios.get('http://localhost:8080/clients')
+  //   data = data.data
+  //   this.setState({
+  //     data
+  //   })
+  // }
 
   componentDidMount = async () => {
     this.myGet()
