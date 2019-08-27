@@ -34,14 +34,6 @@ class App extends Component {
   }
 
 
-  // myGet = async () => {
-  //   let data = await axios.get('http://localhost:8080/clients')
-  //   data = data.data
-  //   this.setState({
-  //     data
-  //   })
-  // }
-
   componentDidMount = async () => {
     this.myGet()
   }
