@@ -47,13 +47,7 @@ class App extends Component {
   }
 
 
-  // updateClient = async (client) => {
-  //   console.log(client)
-  //   let data = await axios.put(`http://localhost:8080/updateClient/${client.name}`, client)
-  //   console.log(data.data.name + ' updted')
-  //   this.myGet()
-  // }
-  
+
 
 
   updatePopup = async (client) => {
